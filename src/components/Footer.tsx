@@ -3,7 +3,7 @@ import LinkComponent from "@/components/LinkComponent";
 import Image from "next/image";
 function Footer() {
   return (
-    <div className="bg-blue-300 p-10 text-white ">
+    <div style={{background:'#1D436C'}} className="bg-blue-300 p-10 text-white ">
       <div className="container mx-auto flex flex-col justify-center items-center w-full space-y-14">
         <div className="flex flex-col  ">
           <Image
