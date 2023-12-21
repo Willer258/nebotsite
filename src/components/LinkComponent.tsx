@@ -9,7 +9,7 @@ function LinkComponent({ link, name , url}: any) {
 
 
   return (
-    <div onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)} className="relative px-5 py-3 rounded  overflow-hidden  boder">
+    <div onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)} className="relative px-5 py-3 rounded  overflow-hidden font-semibold  cursor-pointer">
       <div  style={hover?{right:'0%'}:{right:'100%'}} className="bg-yellow-300 absolute top-0 duration-300  h-1 w-1/2 "></div>
       <div
        style={hover?{left:'0%'}:{left:'100%'}}
