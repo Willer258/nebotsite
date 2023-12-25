@@ -4,6 +4,7 @@ import "./assets/globals.css";
 import Header from "@/components/Header";
 
 import Footer from "@/components/Footer";
+import Providers from "@/app/providers/Providers"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + ' ' + 'bg-ble-400'} >
+      <Providers>
         <Header />
         <div className="">{children}</div>
         <Footer/>
+        </Providers>
       </body>
     </html>
   );
