@@ -75,8 +75,8 @@ function Footer() {
     // </div>
 
     <footer className="bg-gray-800 text-white p-8">
-      <div className="container mx-auto gap-x-5 grid lg:grid-cols-4">
-        <div className="mb-8  lg:mb-0">
+      <div className="container mx-auto gap-y-5 lg:gap-y-0 lg:gap-x-5 grid lg:grid-cols-4">
+        <div className="">
           <h3 className="text-xl font-bold mb-4">À propos de nous</h3>
           <p>Une brève description de votre entreprise ou organisation.</p>
         </div>
@@ -92,7 +92,14 @@ function Footer() {
                 >
                   <span>Je me prépare à créer du patrimoine</span>
 
-                  <img className="h-5 w-5" src="/icons/bottom.svg" alt="" />
+                <Image
+              className="hover:scale-105 duration-300"
+              width={20}
+              height={20}
+              src={"/icons/bottom.svg"}
+              alt="facebook"
+              fill={false}
+            />
                 </Button>
               </DropdownTrigger>
               <DropdownMenu aria-label="Static Actions">
@@ -125,7 +132,14 @@ function Footer() {
                 >
                   <span>Je crée ou je développe du patrimoine</span>
 
-                  <img className="h-5 w-5" src="/icons/bottom.svg" alt="" />
+                <Image
+              className="hover:scale-105 duration-300"
+              width={20}
+              height={20}
+              src={"/icons/bottom.svg"}
+              alt="facebook"
+              fill={false}
+            />
                 </Button>
               </DropdownTrigger>
               <DropdownMenu aria-label="Static Actions">
@@ -155,7 +169,14 @@ function Footer() {
                 >
                   <span>J’hérite ou je transmets du patrimoine</span>
 
-                  <img className="h-5 w-5" src="/icons/bottom.svg" alt="" />
+                <Image
+              className="hover:scale-105 duration-300"
+              width={20}
+              height={20}
+              src={"/icons/bottom.svg"}
+              alt="facebook"
+              fill={false}
+            />
                 </Button>
               </DropdownTrigger>
               <DropdownMenu aria-label="Static Actions">
@@ -185,7 +206,7 @@ function Footer() {
           </div>
         </div>
        
-        <div className="mb-8  lg:mb-0">
+        <div className="">
           <h3 className="text-xl font-bold mb-4">Contact</h3>
           <p>Adresse : 2 rue Louis Pergaud - 94700 Maisons-Alfort - France</p>
           <p>
