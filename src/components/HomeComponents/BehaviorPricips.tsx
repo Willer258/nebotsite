@@ -19,7 +19,7 @@ import {
 function FundingPrincips() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  console.log(isOpen);
+  
   return (
     <>
       <div onClick={onOpen}>
