@@ -13,7 +13,7 @@ function FormationPage() {
           </h2>
 
           <p>
-            {listFormation.description}
+            {/* {listFormation.description} */}
           </p>
 
           <div className="grid grid-cols-3 h-full w-full place-content-center mt-5 gap-10">
