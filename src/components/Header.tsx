@@ -35,7 +35,7 @@ function Header() {
           ? { boxShadow: " 0 1px 4px rgba(0, 0, 0, 0.13)" }
           : { boxShadow: "none" }
       }
-      className="fixed bottm-0 lg:bottom-auto top-0 left-0 right-0 duration-300  "
+      className="fixed bottm-0 lg:bottom-auto top-0 bg-white left-0 right-0 duration-300  "
     >
       <div className="  container mx-auto h-full  py-5 flex-col lg:flex-row   flex justify-between lg:items-center">
         <div className="w-full lg:w-auto px-4 flex justify-between items-center">

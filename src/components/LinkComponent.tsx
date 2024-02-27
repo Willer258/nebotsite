@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-function LinkComponent({ link, name, url, children, style2 }: any) {
+function LinkComponent({ link, name, url, children, style2, classNameText }: any) {
   const [hover, setHover] = useState(false);
   const [onMobile, setOnMobile] = useState(false)
 
@@ -38,7 +38,7 @@ useEffect(() => {
         ></div>
         {link && (
           <Link
-            className="absolute top-0 right-0 left-0 bottom-0"
+            className={`absolute top-0 right-0 left-0 bottom-0 ${classNameText}`}
             style={{ zIndex: 500 }}
             href={link ?? "#"}
           />
@@ -49,13 +49,13 @@ useEffect(() => {
             href={url}
             target="blank"
             style={{ zIndex: 500 }}
-            className="absolute top-0 right-0 left-0 bottom-0"
+            className={`absolute top-0 right-0 left-0 bottom-0 ${classNameText ?? 'text-gray-600'}`}
           />
         )}
 
         <span
-          style={hover ? { color: "black" } : {}}
-          className="relative duration-300 text-gray-600 z-50 top-0 left-0 right-0 bottom-0"
+          style={hover ? { color: classNameText ?? 'black' } : {}}
+          className="relative duration-300  z-50 top-0 left-0 right-0 bottom-0"
         >
           {name ?? "Link"}
         </span>
